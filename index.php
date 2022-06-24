@@ -34,8 +34,9 @@
     cargarNumeros($numbers1to20,20);
 
     echo "<br>" . "Numeros multiplos de 2, entre el 1 y el 20: ";
-    #recorremos el arreglo para imprimir solo los multiplos de 2
-    foreach($numbers1to20 as $index){
+    #recorremos el arreglo para imprimir solo los multiplos de 2;
+    foreach($numbers1to20 as $index)
+    {
         if($index%2 == 0){
             echo "[$index] ";
         }
@@ -62,7 +63,7 @@
         ejemplo si es el 3, debo hacer la resta de 3 menos 2.
         c. Recordar que para recorrer un array tenemos el for y foreach y echo para
         mostrar el elemento y pow para hacer la operación exponencial.*/
-        
+
     #ACLARACION: este ejercicio resuelve para numeros consecutivos unicamente
     $numbers1toX = array();
     echo "<br><br>";
