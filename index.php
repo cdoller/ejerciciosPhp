@@ -49,7 +49,7 @@
     echo "<br><br>";
     cargarNumeros($numbers1to20_2,20);
     echo "Numeros multiplos de 2 y 5, entre el 1 y el 20: ";
-    foreach($numbers1to20 as $index){
+    foreach($numbers1to20_2 as $index){
         if($index%2 == 0 && $index%5 == 0){
             echo "[$index] ";
         }
