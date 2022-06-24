@@ -28,17 +28,16 @@
         mostrar el elemento.*/
 
     #definimos un arreglo para numeros del 1 al 20
-    $numbers1to20 = array();
+    $numbers1to20_0 = array();
     
     #cargamos los numeros con la funcion definida al comienzo
-    cargarNumeros($numbers1to20,20);
+    cargarNumeros($numbers1to20_0,20);
 
     echo "<br>" . "Numeros multiplos de 2, entre el 1 y el 20: ";
     #recorremos el arreglo para imprimir solo los multiplos de 2;
-    foreach($numbers1to20 as $index)
-    {
-        if($index%2 == 0){
-            echo "[$index] ";
+    foreach($numbers1to20_0 as $ind){
+        if($ind%2 == 0){
+            echo "[$ind] ";
         }
     }
 
