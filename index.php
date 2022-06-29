@@ -6,6 +6,18 @@
         }
     }
     
+    $arrayNumeros = array(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20);
+    foreach($arrayNumeros as $item){
+        if($item%2 == 0 && $item%5==0){
+            echo "El numero $item es par y es multiplo de 5" . "<br>";
+        }
+        elseif($item%2==0){
+            echo "El numero $item es par." . "<br>";
+        }
+        else{
+            echo "El numero $item no es ni par ni multiplo de 5" . "<br>";
+        }
+    }
     
     /*Definir un array con los días de la semana y recorrer imprimiendo cada uno de los
     días con la posición o índice que corresponde.
@@ -66,17 +78,17 @@
     #ACLARACION: este ejercicio resuelve para numeros consecutivos unicamente
     $numbers1toX = array();
     echo "<br><br>";
-    cargarNumeros($numbers1toX, 30);
+    cargarNumeros($numbers1toX, 20);
     #numero anterior me sirve para cumplir con la parte b del programa
     $numeroAnterior = 0;
     foreach($numbers1toX as $i){
         if($i % 2 == 0){
-            $aux = $i * $i;
-            echo $i . "=>" . $aux . "<br>";
+            $potenciaCuadrado = pow($i, 2);
+            echo $i . "=>" . $potenciaCuadrado . "<br>";
         }
         else{
-            $aux = $i - $numeroAnterior;
-            echo $i . "=>" . $aux . "<br>";
+            $restaAnterior = $numbers1toX[$i]- $numbers1toX[$i-1];
+            echo $i . "=>" . $restaAnterior . "<br>";
         }
         $numeroAnterior = $i;
     }
